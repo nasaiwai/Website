@@ -2,7 +2,11 @@
 <html>
    <head>
 	<title>Nasa Iwai</title>
-	<style type="text/css">
+<!--        <div class = "image">
+           <img src = "skytree.jpg" alt = "" />
+           <h2>Personal Project<br />My everyday life can't describe without coding!</h2>
+        </div>
+-->	<style type="text/css">
 	   * { margin: 0; padding: 0; }
 
 	   body {
@@ -11,11 +15,21 @@
 	   }
 
 	   #header {
-		background-color: #FFCCFF;
+		background-color: purple;
 		height: 100px;
 		width: 100%;
-		z-index: 10;
 	   }
+
+           .image {
+           }
+
+           h2 {
+                position: absolute;
+                top: 200px;
+                left: 150px;
+                #width: 100%;
+		#background-color: purple;
+           }
 
 	   .container {
 		width: 960px;
@@ -26,7 +40,7 @@
 	   }
 
 	   #logoArea {
-		background-color: #FFCCFF;
+		background-color: purple;
 		width: 300px;
 		height: 100px;
 		background-image: url(logo2.png);
@@ -34,7 +48,7 @@
 	   }
 
 	   #navArea {
-		background-color: #FFCCFF;
+		background-color: purple;
 		width: 660px;
 		#width: 760px;
 		height: 100px;
@@ -49,7 +63,7 @@
 	   }
 
 	   #nav a {
-		color: #AB82FF;
+		color: white;
 		text-decoration: none;
 		font-size: 20px;
 		font-weight: bold;
@@ -59,10 +73,10 @@
 		float: left;
 		margin-left: 30px;
 		#background-color: #AB82FF;
-		background-color: white; 
+		#background-color: white; 
 		padding: 8px;
-		border: 1px solid white;
-		border-radius: 5px;
+		#border: 1px solid white;
+		#border-radius: 5px;
 	   }
 
 	   #nav li:hover {
@@ -76,7 +90,7 @@
 	   }
 	
 	   #contents {
-		background-color: F5DEB3;
+		background-color: #F6CED8;
 		background-image: url(dot7.png);
 		width: 850px;
 		height: 1730px;
@@ -87,8 +101,44 @@
 		padding: 35px;
 	   }
 
+	   .caption {
+		position: relative;
+		overflow: hidden;
+	   }
+
+	   .caption__media {
+		display: block;
+		min-width: 100%;
+		max-width: 100%;
+		height: auto;
+	   }
+	   .caption__overlay {
+		position: absolute;
+		top: 0px;
+		right: 190px;
+		bottom: 0;
+		left: 190px;
+		padding: 10px;
+		color: white;
+		list-style: none;
+		transform: translateY(100%);
+		transition: transform .35s ease-out;
+		background-color: #E2A9F3;
+	   }
+
+	   .caption:hover .caption__overlay {
+		transform: translateY(0);
+	   }
+
+	   .line {
+		#text-align: center;
+		#display: table;
+		#margin: 0 auto;
+		#float: left;
+	   }
+
 	   #footer {
-		background-color: #FFCCFF;
+		background-color: purple;
 		height: 40px;
 		width: 133%;
 		color: white;
@@ -98,6 +148,10 @@
 	</style>
    </head>
    <body>
+	<div class = "image">
+	   <img src = "skytree.jpg" alt = "image" style = "width: 100%">
+	   <h2><font color = "purple"; font size = 20px;>Personal Project</font></h2>
+	</div>
 	<div id = "header">
 	   <div class = "container">
 		<div id = "logoArea"></div>
@@ -115,52 +169,49 @@
 	<div id = "mainArea">
 	   <div class = "containerPage">
 		<section id = "contents";>
-		    <br /><br /><br />
+		    <br /><br />
 		    <div class = "resume_contents">
-		        <h3><font color = "purple">Education</font></h3>
-		        <hr />
-		        <h3><font color = "purple">Palomar College <span style = "margin-left:20em">August 2012 ~ August 2014</span></font></h3>
-		           <p>Academic Honors: Dean&apos;s List (3 semesters), Phi Theta Kappa Honor Society</p>
-		           <br />
-		        <h3><font color = "purple">University of California, San Diego <span style = "margin-left:8em">September 2014 ~ December 2016</span></font></h3>
-		           <p>Bachelor of Arts in Computer Science (software engineering)</p>
-		           <br /><br />
-		        <h3><font color = "purple">Courses Completed</font></h3>
-		        <hr />
-		           <p> - Java Programming & Data Structure</p>
-		           <p> - C++ Programming & Data Structure</p>
-		           <p> - C Programming</p>
-		           <p> - HTML & Java Script</p>
-		           <p> - ARM Assembly Language</p>
-		           <p> - Software Engineering</p>
-		           <p> - Object-Oriented Design</p>
-		           <p> - Software Tools and Techniques</p>
-		           <p> - Shell Script and Makefiles</p>
-		           <br /><br />
-		       <h3><font color = "purple">Personal Projects</font></h3>
+		       <h3><font color = "purple">RPG Adventure Game <span style = "margin-left:19em">Summer 2015 ~ Present</span></font></h3>
 		       <hr />
-		           <h3><font color = "purple">Own Website <span style = "margin-left:19.3em">October 2015 ~ November 2015</span></font></h3>
-		    		<p> - Designed own website</p>
-		    		<p> - Programmed website using HTML</p>
-		    		<br />
-		           <h3><font color = "purple">Line Stickers <span style = "margin-left:23em">Summer 2015 ~ Present</span></font></h3>
+		    		<p> - Created RPG game where you go on an adventure and kill monsters to get coins and move on to the next adventure</p>
+		    		<p> - Designed storyline of how the adventure continues</p>
+		    		<p> - Integrated music, images, and animations to make game more fun and exciting for users</p>
+		    		<p> - Used and implemented Ruby Script</p>
+				<br />
+				<article class = "caption">
+				    <img class = "caption_media"/>
+				    <div style = "text-align: center">
+					<a href = "https://github.com/nasaiwai/RPG-Game" target = "_blank"><img src = "RPG.png" style = "width: 400px;"></a>
+				    	<div class="caption__overlay">
+						<h1 class="caption_overlay_title"><a href = "https://github.com/nasaiwai/RPG-Game"><br/><br/><br/><br/>Git Hub</a></h1>
+						<p class="caption_overlay_content">Please take a look at codes here!</p>
+					</div>
+				    </div>
+				</article>
+		    		<br /><br />
+		       <h3><font color = "purple">Line Stickers <span style = "margin-left:23em">Summer 2015 ~ Present</span></font></h3>
+		       <hr />
 		    		<p> - Created emotional icons of rabbits with various facial expressions for mobile messaging app Line</p>
 		    		<p> - Incorporated words in each icon for easier use</p>
 		    		<p> - In the process of selling stickers for public use</p>
 		    		<p> - Designed using Inkscape illustration software</p>
 		    		<br />
-		    	   <h3><font color = "purple">RPG Adventure Game <span style = "margin-left:19em">Summer 2015 ~ Present</span></font></h3>
-		    		<p> - Created retro-style fantasy RPG</p>
-		    		<p> - Designed story and quest arcs that provide an open world experience</p>
-		    		<p> - Integrated music, images, and animations to make game more fun and exciting for users</p>
-		    		<p> - Used and implemented Ruby Script</p>
-		    		<br /><br />
-		       <h3><font color = "purple">School Projects</font></h3>
+				    <div class = "line">
+	   				<img src = "line2.png" alt = "image" style = "width: 380px; float: left;">
+	   				<img src = "line1.png" alt = "image" style = "width: 380px; float: right;">
+				    </div>
+		    		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		       <h3><font color = "purple">Create My Own Website <span style = "margin-left:14em">October 2015 ~ November 2015</span></font></h3>
+		       <hr />
+		    		<p> - Designed and Programmed my own website</p>
+		    		<p> - Implemented in HTML</p>
+		    		<br />
+<!--		       <h3><font color = "purple">School Projects</font></h3>
 		       <hr />
 		    	   <h3><font color = "purple">Calendar App <span style = "margin-left:25em">Fall 2015 ~ Present</span></font></h3>
 		    		<p> - App allows users to see their friends&apos; schedule and set up study groups and meetings based on their schedule</p>
 		    		<p> - Part of a five-member team on the project</p>
-		    		<p> - Designed, implemented, and tested application for Android platform</p>
+		    		<p> - Designed, implemented, and tested applications for Android platform</p>
 		    		<br />
 		    	   <h3><font color = "purple">Debugging Tetris Game <span style = "margin-left:23.3em">Summer 2015</span></font></h3>
 		    		<p> - Used hprof for profiling to make sure programs works efficiently in terms of time, memory, and CPU</p>
@@ -173,22 +224,9 @@
 		    		<br />
 		    	   <h3><font color = "purple">Portfolio <span style = "margin-left:32em">Fall 2014</span></font></h3>
 		    		<p> - Developed online portfolio using HTML and JavaScript</p>
-		    		<p> - Designed a pop-up survey that displayed different results to users based on their answers</p>
+		    		<p> - Designed pop-up survey and gave users result based on their answers</p>
 		    		<br /><br />
-		       <h3><font color = "purple">Skills</font></h3>
-		       <hr />
-		     	   <p> - Java</p>
-		     	   <p> - C++</p>
-		     	   <p> - C</p>
-		     	   <p> - Ruby Script</p>
-		     	   <p> - HTML & Java Script</p>
-		     	   <p> - Shell Script and Makefiles</p>
-		     	   <p> - ARM Assembly Language</p>
-		     	   <p> - Git Version Control</p>
-		     	   <p> - Profiling</p>
-		     	   <p> - GDB</p>
-		     	   <br /><br />
-		    </div>
+-->		    </div>
 		</section>
 	   </div>
 	</div>
