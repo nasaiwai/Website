@@ -2,11 +2,7 @@
 <html>
    <head>
 	<title>Nasa Iwai</title>
-<!--        <div class = "image">
-           <img src = "skytree.jpg" alt = "" />
-           <h2>Personal Project<br />My everyday life can't describe without coding!</h2>
-        </div>
--->	<style type="text/css">
+	<style type="text/css">
 	   * { margin: 0; padding: 0; }
 
 	   body {
@@ -93,13 +89,42 @@
 		background-color: #F6CED8;
 		background-image: url(dot7.png);
 		width: 850px;
-		height: 1730px;
+		height: 1430px;
 		border-radius: 100px;
 	   }
 
+           #wrap {
+                position:relative;
+                width: 200px;
+                #background: silver;
+                #border: 1px solid grey
+           }
+
+	  /* text box on top of the picture */ 
+           #text {
+                position: absolute;
+                width: 360px;
+                right: 470px;
+                left: 470px;
+                top: 130;
+                bottom: 130;
+                background: #DA81F5;
+                color:white
+
+           }
+
 	   .resume_contents {
 		padding: 35px;
+		font-size: 16px;
 	   }
+
+	   .pic_text {
+		font-size: 19px;
+		position: absolute;
+                padding: 20px;
+		top: -175px;
+		left: -90px;
+           }
 
 	   .caption {
 		position: relative;
@@ -148,9 +173,16 @@
 	</style>
    </head>
    <body>
-	<div class = "image">
-	   <img src = "autom.jpg" alt = "image" style = "width: 100%">
-	   <h2><font color = "purple"; font size = 20px;>Personal Project</font></h2>
+        <div id = "wrap">
+	   <img src = "autom.jpg" alt = "image" style = "width: 1280px;">
+                <div id="text">
+                   <div class = "pic_text";>
+                        <div style = "text-align: center">
+                            <h2>Personal&nbsp;Projects</h2>
+                             <br />
+                        </div>
+                   </div>
+                </div>
 	</div>
 	<div id = "header">
 	   <div class = "container">
@@ -197,8 +229,8 @@
 		    		<p> - Designed using Inkscape illustration software</p>
 		    		<br />
 				    <div class = "line">
-	   				<img src = "line2.png" alt = "image" style = "width: 380px; float: left;">
-	   				<img src = "line1.png" alt = "image" style = "width: 380px; float: right;">
+	   				<img src = "line1.png" alt = "image" style = "width: 380px; float: left;">
+	   				<img src = "line2.png" alt = "image" style = "width: 380px; float: right;">
 				    </div>
 		    		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 		       <h3><font color = "purple">Create My Own Website <span style = "margin-left:14em">October 2015 ~ November 2015</span></font></h3>
@@ -206,6 +238,17 @@
 		    		<p> - Designed and Programmed my own website</p>
 		    		<p> - Implemented in HTML</p>
 		    		<br />
+				<article class = "caption">
+				    <img class = "caption_media"/>
+				    <div style = "text-align: center">
+					<a href = "https://github.com/nasaiwai/Website" target = "_blank"><img src = "RPG.png" style = "width: 400px;"></a>
+				    	<div class="caption__overlay">
+						<h1 class="caption_overlay_title"><a href = "https://github.com/nasaiwai/Website"><br/><br/><br/><br/>Git Hub</a></h1>
+						<p class="caption_overlay_content">Please take a look at codes here!</p>
+					</div>
+				    </div>
+				</article>
+		    		<br /><br />
 <!--		       <h3><font color = "purple">School Projects</font></h3>
 		       <hr />
 		    	   <h3><font color = "purple">Calendar App <span style = "margin-left:25em">Fall 2015 ~ Present</span></font></h3>
