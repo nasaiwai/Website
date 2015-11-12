@@ -116,12 +116,39 @@
 		border-radius: 100px;
 	   }
 
+	   #wrap {
+		position:relative;
+		width: 200px; 
+		#background: silver; 
+		#border: 1px solid grey
+	   }
+
+	   #text {
+		position: absolute; 
+		width: 400px; 
+		right: 450px;
+		left: 150px; 
+		top: 200; 
+		bottom: 150; 
+		background: pink; 
+		color:white
+	   }
+
 	   .resume_contents {
 		padding: 35px;
 		font-size: 16px;
 	   }
 
+	   .pic_text {
+		padding:20px;
+	   }
+
+	   h4 {
+		font-size: 12px;
+	   }
+
 	   #footer {
+		#font-size: 12px;
 		background-color: #FFCCFF;
 		height: 40px;
 		width: 133%;
@@ -146,14 +173,17 @@
 		</div>
 	   <div>
 	</div>
-        <div class = "image">
-            <img src = "ueno.jpg" alt = "image" style = "width: 133.5%">
-	    <div style = "text-align: center">
-            <div class="caption__overlay">
-        	<h1 class="caption_overlay_title"><font color = "purple"; font size = 20px;>Home</h1>
-        	<p class="caption_overlay_content">Please take a look at codes here!</p>
-            </div>
-            </div>
+        <div id = "wrap">
+            <img src = "ueno.jpg" alt = "image" style = "width: 1280px">
+	        <div id="text">
+		   <div class = "pic_text";>
+			<div style = "text-align: center">
+			    <h2><font size = "20px";>Hello!</font></h2>
+			     <br />
+			     <p>I am a senior student at University of California, San Diego. I am studying Computer Science, specializing in software engineerinig. My passion lies in programing! My life can't describing without my everyday coding life. I am originally from Tokyo, Japan. I love sushi, ramen, beach, cooking, and rock climbing!.</p>
+			</div>
+		   </div>
+		</div>
         </div>
 	<div id = "mainArea">
 	   <div class = "containerPage">
@@ -186,7 +216,7 @@
 	</div>
 	<div id = "footer">
 	   <div class = "foot-container">
-		<h2><font size = 12px>Copyright Notice Here - Site maintained by Nasa Iwai</font></h2>
+		<h4><font size = 10px>Copyright Notice Here - Site maintained by Nasa Iwai</font></h2>
 	   </div>
 	</div>
    </body>
