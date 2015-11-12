@@ -86,13 +86,39 @@
 		background-color: #F6CED8;
 		background-image: url(dot7.png);
 		width: 850px;
-		height: 3430px;
+		height: 2750px;
 		border-radius: 100px;
 	   }
+
+           #wrap {
+                position:relative; /* make this relative to have the inner div absolute without     breaking out */
+                width: 200px;  /* fix the width or else it'll be the entire page's width */
+                #background: silver;
+                #border: 1px solid grey
+           }
+
+           #text {
+                position: absolute;
+                width: 360px;
+                right: 470px;
+                left: 470px;
+                top: 130;
+                bottom: 130;
+                background: #DA81F5;
+                color:white
+           }
 
 	   .resume_contents {
 		padding: 35px;
 	   }
+
+           .pic_text {
+		font-size: 19px;
+                position: absolute;
+                padding: 20px;
+                top: -175px;
+                left: -70px;
+           }
 
 	   .caption {
 		position: relative;
@@ -234,10 +260,17 @@
 	</style>
    </head>
    <body>
-	<div class = "image">
-	   <img src = "cherryblossom3.jpg" alt = "image" style = "width: 100%">
-	   <h2><font color = "purple"; font size = 20px;>School Project</font></h2>
-	</div>
+        <div id = "wrap">
+           <img src = "cherryblossom3.jpg" alt = "image" style = "width: 1280px;">
+                <div id="text">
+                   <div class = "pic_text";>
+                        <div style = "text-align: center">
+                            <h2>School&nbsp;Projects</h2>
+                             <br />
+                        </div>
+                   </div>
+                </div>
+        </div>
 	<div id = "header">
 	   <div class = "container">
 		<div id = "logoArea"></div>
