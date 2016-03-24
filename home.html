@@ -1,157 +1,131 @@
 
 <html>
    <head>
-	<title>Nasa Iwai</title>
+	<title>Nasa Iwai | Software engineer</title>
 	<style type="text/css">
 	   * { margin: 0; padding: 0; }
 
 	   body {
-		font-family: chalkboard;
-		background-color: #FFFFFF;
+		    font-family: chalkboard;
+		    background-color: #FFFFFF;
 	   }
 
+       /* Header */
 	   #header {
-		background-color: #FFCCFF;
-		height: 100px;
-		width: 100%;
-		z-index: 10;
+		    background-color: #fbacd8;
+    		height: 100px;
+	    	width: 100%;
+		    z-index: 10;
 	   }
 
-           h1 {
-                position: absolute;
-                top: 200px;
-                left: 150px;
-                #width: 100%;
-                #background-color: purple;
-           }
-
-           .caption {
-                position: relative;
-           }
-
-           .caption__media {
-                display: block;
-                min-width: 100%;
-                max-width: 100%;
-                height: auto;
-           }
-
-	   .caption__overlay {
-                position: absolute;
-                top: 0px;
-                right: 190px;
-                bottom: 0;
-                left: 790px;
-                padding: 10px;
-                color: white;
-                list-style: none;
-                transform: translateY(100%);
-                transition: transform .35s ease-out;
-                background-color: #E2A9F3;
-           }
-
+       /* Link box */
 	   .container {
-		width: 960px;
-		#height: auto;
-		height: 20px;
-		#margin: 0 auto;
-		#margin: 50px;
+            width: 100%;
+		    height: 20px;
 	   }
 
+       /* Display "NASA" logo */
 	   #logoArea {
-		background-color: #FFCCFF;
-		width: 300px;
-		height: 100px;
-		background-image: url(logo2.png);
-		float: left;
+		    background-color: #fbacd8;
+	    	width: 24%;
+	    	height: 100px;
+	    	background-image: url(logo2.png);
+            background-size: contain;
+	    	float: left;
 	   }
 
+       /* Devide header into logo area and link area */
 	   #navArea {
-		background-color: #FFCCFF;
-		width: 660px;
-		#width: 760px;
-		height: 100px;
-		float: right;
+	    	background-color: #fbacd8;
+            width: 76%;
+   	    	height: 100px;
+    		float: right;
 	   }
 
+       /* Decide location for each link box */
 	   #nav {
-		list-style: none;
-		margin-top: 30px;
-		width: 900px;
-		#float: left;
+		    list-style: none;
+     		margin-top: 30px;
+	    	width: 100%;
 	   }
 
+       /* Settings for Letter Decoraton of Link Option(About, Resume, Projects, etc) */
 	   #nav a {
-		color: #AB82FF;
-		text-decoration: none;
-		font-size: 20px;
-		font-weight: bold;
+    		color: #AB82FF;
+	    	text-decoration: none;
+		    font-size: 20px;
+		    font-weight: bold;
 	   }
 
+       /* Box for link option(About, Resume, Projects, etc) */
 	   #nav li {
-		float: left;
-		margin-left: 30px;
-		#background-color: #AB82FF;
-		background-color: white; 
-		padding: 8px;
-		border: 1px solid white;
-		border-radius: 5px;
+    		float: left;
+	    	margin-left: 30px;
+		    background-color: white; 
+    		padding: 8px;
+	    	border: 1px solid white;
+		    border-radius: 5px;
 	   }
 
 	   #nav li:hover {
-		backgound-color: grey;
+    		backgound-color: grey;
 	   }
 
+       /* Body Background Color */
 	   .containerPage {
-		background-color: white;
-		padding: 100px;	
-		#padding: 20px;	
+    		background-color: white;
+	    	padding: 10%;	
 	   }
-	
+
+       /* Yellow Text content Box */	
 	   #contents {
-		margin-left: 130px;
-		background-color: F5DEB3;
-		background-image: url(dot7.png);
-		width: 850px;
-		height: 230px;
-		border-radius: 100px;
+            margin-left: 10%;
+	    	background-color: F5DEB3;
+		    background-image: url(dot7.png);
+    		width: 80%;
+            #width: 850px;
+	    	height: 230px;
+		    border-radius: 100px;
 	   }
 
+       /* Area where picture and pink box inside */
 	   #wrap {
-		position:relative;
-		width: 200px; 
-		#background: silver; 
-		#border: 1px solid grey
+            width: 100%;
+    		position:relative;
 	   }
 
+       /* Text Box inside of picture */
 	   #text {
-		position: absolute; 
-		width: 400px; 
-		right: 450px;
-		left: 150px; 
-		top: 200; 
-		bottom: 150; 
-		background: pink; 
-		color:white
+		    position: absolute; 
+		    width: 400px; 
+		    left: 15%; 
+	    	top: 20%; 
+	    	bottom: 25%; 
+  	    	background: pink; 
+    		color:white;
 	   }
 
+       /* Settings for Letters of Text Box in yellow content box */
 	   .resume_contents {
 		padding: 35px;
 		font-size: 16px;
 	   }
 
+       /* Settings for Letters of Text box inside of picture */
 	   .pic_text {
-		padding:20px;
+            top: 0px;
+            position: absolute;
+	        padding:20px;
 	   }
 
+       /* Footer */
 	   #footer {
 		font-size: 16px;
-		background-color: #FFCCFF;
+		background-color: #fbacd8;
 		height: 40px;
-		width: 133%;
+		width: 100%;
 		color: white;
 		padding-top: 20px;		
-		#font-weight: normal;
 	   }
 
 	</style>
@@ -162,30 +136,35 @@
 		<div id = "logoArea"></div>
 		<div id = "navArea">
 		   <ul id = "nav">
-			<a href = "#"><li>About</li></a>
-			<a href = "#"><li>Resume</li></a>
-		 	<a href = "#"><li>School Projects</li></a>
-			<a href = "#"><li>Personal Projects</li></a>
-			<a href = "#"><li>Contacts</li></a>
+			<a href = "http://nasaiwai.net/"><li>About</li></a>
+			<a href = "http://nasaiwai.net/resume.html"><li>Resume</li></a>
+		 	<a href = "http://nasaiwai.net/sProjects.html"><li>School Projects</li></a>
+			<a href = "http://nasaiwai.net/pProject.html"><li>Personal Projects</li></a>
+			<a href = "http://nasaiwai.net/contact.html"><li>Contact</li></a>
 		   </ul>
 		</div>
-	   <div>
+	   </div>
 	</div>
         <div id = "wrap">
-            <img src = "ueno.jpg" alt = "image" style = "width: 1280px">
+            <img src = "ueno.jpg" alt = "image" style = "width: 100%">
 	        <div id="text">
 		   <div class = "pic_text";>
 			<div style = "text-align: center">
 			    <h2><font size = "20px";>Hello!</font></h2>
-			     <br />
-			     <p>I am a senior student at University of California, San Diego. I am studying Computer Science, specializing in software engineerinig. My passion lies in programing! My life can't describing without my everyday coding life. I am originally from Tokyo, Japan. I love sushi, ramen, beach, cooking, and rock climbing!.</p>
+			     <p>My name is Nasa Iwai. I am a senior at University of California, 
+                    San Diego. I am studying Computer Science, specializing in software 
+                    engineerinig. I am originally from Tokyo, Japan! I enjoy programming 
+                    and developing web and mobile applications. I am excited to be a 
+                    software engineer and create something that will be widely enjoyed 
+                    by many people.
+                 </p>
 			</div>
 		   </div>
 		</div>
         </div>
 	<div id = "mainArea">
 	   <div class = "containerPage">
-		<section id = "contents";>
+		<section id = "contents">
 		    <br />
 		    <div class = "resume_contents">
 			<div style = "text-align: center">
@@ -193,7 +172,8 @@
 		           <p><a href = "https://github.com/nasaiwai">Link for Git Hub</a></p>
 		           <br />
 		        <h3><font color = "purple">LinkedIn: </span></font></h3>
-		           <p><a href = "https://www.linkedin.com/profile/view?id=AAIAABNJ-e0BieN4qlNiL-yec-C6MKpuKBNmLsQ&trk=nav_responsive_tab_profile_pic">Link for LinkedIn</a></p>
+		           <p><a href = "https://www.linkedin.com/in/nasa-iwai-3a546590">
+                        Link for LinkedIn</a></p>
 		           <br /><br />
 			</div>
 		    </div>
@@ -202,8 +182,9 @@
 	</div>
 	<div id = "footer">
 	   <div class = "foot-container">
-		<p>Copyright Notice Here - Site maintained by Nasa Iwai</p>
+		<p>&nbsp;&nbsp;Copyright Notice Here - Site maintained by Nasa Iwai</p>
 	   </div>
 	</div>
    </body>
 </html>
+

@@ -1,7 +1,7 @@
 
 <html>
    <head>
-	<title>Nasa Iwai</title>
+	<title>Nasa Iwai | Software Engineer</title>
 	<style type="text/css">
 	   * { margin: 0; padding: 0; }
 
@@ -143,32 +143,32 @@
 		#margin-left: 100px;
 	   }
 
-	   #mtscontact_name {
+	   #name {
 		width: 500px;
 		height: 40px;
 		padding: 5px;
 	   }
 
 
-	   #mtscontact_email {
+	   #email {
 		width: 500px;
 		height: 40px;
 		padding: 5px;
 	   }
 
-	   #mtscontact_subject {
+	   #subject {
 		width: 500px;
 		height: 40px;
 		padding: 5px;
 	   }
 
-	   #mtscontact_message {
+	   #message {
 		width: 500px;
 		height: 150px;
 		padding: 5px;
 	   }
 
-	   #mtscontact_submit{
+	   #submit{
 		#width: 100px;
 		#height: 5px;
 		#padding: 5px;
@@ -224,19 +224,19 @@
 		    <div class="contact_column">
 			<br />
 			<h6><div style = "margin-left:300px;"><font size = "10">Contact info</font></div></h6>
-		        <form method="post" action="" id="mtscontact_form" class="contact-form">
+		        <form method="post" action="contact.php" id="mtscontact_form" class="contact-form">
             		    <input type="text" name="mtscontact_captcha" value="" style="display: none;" />
             	 	    <input type="hidden" name="mtscontact_nonce" value="e1c86ec92e" />
            		    <input type="hidden" name="action" value="mtscontact" />
-            		    <input placeholder="Your Name*" type="text" name="mtscontact_name" value="" id="mtscontact_name" />
+            		    <input placeholder="Your Name*" type="text" name="name" value="" id="name" />
 			    <br /><br />
-            		    <input placeholder="Your Email Address*" type="text" name="mtscontact_email" value="" id="mtscontact_email" />
+            		    <input placeholder="Your Email Address*" type="text" name="email" value="" id="email" />
 			    <br /><br />
-            		    <input placeholder="Subject*" type="text" name="mtscontact_subject" value="" id="mtscontact_subject" />
+            		    <input placeholder="Subject*" type="text" name="subject" value="" id="subject" />
 			    <br /><br />
-            		    <textarea placeholder="Message*" name="mtscontact_message" id="mtscontact_message"></textarea>
+            		    <textarea placeholder="Message*" name="message" id="message"></textarea>
 			    <br /><br />
-            		    <input type="submit" value="Send Message" id="mtscontact_submit" />
+            		    <input type="submit" value="Send Message" id="submit" />
         	        </form>
         	        <div id="mtscontact_success" style="display: none;">Your message has been sent.</div>
                     </div>
